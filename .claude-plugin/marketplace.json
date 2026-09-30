@@ -1,0 +1,93 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "jcoger-skills",
+  "owner": {
+    "name": "Jarrett Coger",
+    "url": "https://jcoger.com"
+  },
+  "metadata": {
+    "description": "Skills for designers who build: mobile apps, marketing sites, and the words inside products.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "mobile-kit",
+      "description": "Seven skills for building native-feeling React Native and Expo apps that hold one design system from scaffold to store. One command family: /mob.",
+      "source": "./",
+      "strict": false,
+      "author": {
+        "name": "Jarrett Coger",
+        "url": "https://jcoger.com"
+      },
+      "category": "design",
+      "skills": [
+        "./skills/mobile-scaffold",
+        "./skills/mobile-architecture",
+        "./skills/mobile-design",
+        "./skills/mobile-motion",
+        "./skills/mobile-audit",
+        "./skills/mobile-ship",
+        "./skills/mobile-engage"
+      ],
+      "commands": [
+        "./commands/mob-arch.md",
+        "./commands/mob-design.md",
+        "./commands/mob-engage.md",
+        "./commands/mob-motion.md",
+        "./commands/mob-review.md",
+        "./commands/mob-scaffold.md",
+        "./commands/mob-ship.md",
+        "./commands/mob.md"
+      ]
+    },
+    {
+      "name": "marketing-stack",
+      "description": "Nine skills that take a marketing site from blank page to shipped code, each handing the next a named spec. One command family: /mk-*.",
+      "source": "./",
+      "strict": false,
+      "author": {
+        "name": "Jarrett Coger",
+        "url": "https://jcoger.com"
+      },
+      "category": "design",
+      "skills": [
+        "./skills/marketing-site-architecture",
+        "./skills/conversion-architecture",
+        "./skills/marketing-page-layout",
+        "./skills/motion-direction",
+        "./skills/product-choreography",
+        "./skills/animation-craft",
+        "./skills/retrieval-architecture",
+        "./skills/design-craft-library",
+        "./skills/web-build"
+      ],
+      "commands": [
+        "./commands/mk-anim.md",
+        "./commands/mk-build.md",
+        "./commands/mk-cite.md",
+        "./commands/mk-convert.md",
+        "./commands/mk-extract.md",
+        "./commands/mk-find.md",
+        "./commands/mk-motion.md",
+        "./commands/mk-page.md",
+        "./commands/mk-plan.md",
+        "./commands/mk-review.md",
+        "./commands/mk-story.md"
+      ]
+    },
+    {
+      "name": "ux-copy",
+      "description": "Write, audit, and sweep the strings inside a product: buttons, errors, empty states, prompts, alt text.",
+      "source": "./",
+      "strict": false,
+      "author": {
+        "name": "Jarrett Coger",
+        "url": "https://jcoger.com"
+      },
+      "category": "design",
+      "skills": [
+        "./skills/ux-copy"
+      ]
+    }
+  ]
+}

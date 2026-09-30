@@ -1,0 +1,16 @@
+# 021 - Card as a layer stack, in two postures
+- **Source:** interfacecraft.dev/library (compositing) + functionhealth.com, paraform.com (observed 2026-06)
+- **Tags:** archetype: saas · domain: layout · mood: grounded · cost: M
+- **What:** A content card is not one box. It's a paint-order stack of conceptual layers: **Shadow → Surface → Image → Scrim → Content → Hairline**. Refinement is getting that ordering and each layer's technique right. And cards come in two postures: a **frame** (padded container, text on top, visual below: the grid/bento case) and an **object** (unpadded product surface where the visual fills and bleeds the edges, one dominant element: the beside-copy case in Function/Paraform).
+- **Use when:** any card that has to feel like real product (a feature visual beside copy → object) or sit calmly in a grid (→ frame). **Skip when:** a single flat box genuinely suffices and the extra layering is ceremony.
+- **Why it works:** the two postures stop a card built for a grid from looking anemic when placed beside copy (and vice-versa). The layer model gives the "object" its depth: a backdrop atmosphere to sit on, a raised surface, a bleeding image, a scrim, and a crisp hairline on top.
+- **Technique notes (the non-obvious bits):**
+  - **Hairline as inset ring / transparent-outline box-shadow, NOT a solid border**: it picks up whatever's behind it and stays crisp over shadows, images, and unknown brand backgrounds. Composes with elevation + hover.
+  - **Layered shadows**: stack box-shadows at doubling blur radii (contact edge + ambient falloff); a single blur never reads as physical.
+  - **`isolation: isolate`** on the card so blend-mode content composites within it, not against the page.
+  - **Single-edge dividers** on stacked rows: overlapping transparent borders double their opacity and read too dark.
+  - **Scrim choice:** mask-not-overlay for tinting UI (dark-mode safe); but a photo cover legitimately wants a contained dark scrim for caption legibility (the photo is its own context).
+  - **Edge-fade mask** (`mask-image` gradient) for rows/UI that bleed off an object card.
+- **Build owner:** the project's Card + CardContent foundation component.
+- **Do not copy:** applying the "object" density everywhere. Calm frames are half the system; overuse of bleed reads as busy.
+- **Cost:** M
