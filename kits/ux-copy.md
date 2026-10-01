@@ -39,10 +39,12 @@ Right    Not enough in the caption to read. Nothing guessed. Open Saved to add w
 
 **The band decides the gate severity.** Personality is not uniform. A trust spectrum (voice leads / shared / structure leads) decides how hard each gate bites: full strength on billing and errors, relaxed on a profile page. The band chooses *which* words, never *how many*. Personality in a well-run product is shorter than the neutral version, not longer.
 
-**Thirteen binary gates**, including two that most copy guidance lacks:
+**The writer cannot read their own copy cold.** They know what every term means and which numbers are scaled, so the gaps are invisible to them. On any surface read top to bottom, any billing or consent surface, and any surface where numbers relate, the skill hands the rendered text to a subagent that never saw the plan, then checks every finding against the data before applying it. In its first real run, a cold read caught score weights of 40, 15 and 10 presented as the whole score, a list of 5 + 4 + 1 under a heading that said 12, `every card` on a page where five cards had none, and a misquote inside quotation marks. The writer had walked past all of them.
+
+**Twenty binary gates**, three of which fire only on AI output, multi-language products, or regulated flows. Two that most copy guidance lacks:
 
 - **Gate I: too flat for its surface.** Every other gate cuts. On a voice-leads surface, correct-but-lifeless is a failure. Capped so it can never add length.
-- **Gate J: voice rules govern product-authored strings only.** Never edit a customer quote to pass a style guide. That fabricates a testimonial, which is worse than the banned word.
+- **Gate J: voice rules govern product-authored strings only.** Never edit a customer quote to pass a style guide. That fabricates a testimonial, which is worse than the banned word. And the reverse: any words the product puts inside quotation marks are exactly what the person said.
 
 **SWEEP is a queue, not a report.** Findings grouped by problem type so whole groups clear in one reply. Accepting writes a plan file; **rejecting writes a dated entry in "Findings considered and rejected."** Copy is the most re-litigated thing in a product. Without that record, every fresh audit re-flags the same strings forever.
 
@@ -67,13 +69,22 @@ Then `/ux-copy`, or let it trigger on "what should this button say", "this error
 
 ```
 ux-copy/
-├── SKILL.md            modes · gates · register · bands · the artifact
-└── references/         loaded on demand, not up front
-    ├── states.md       the 12 states · error anatomy · component matrix · budgets
-    ├── journey.md      onboarding · guided interaction · prompt/work/follow-up
-    ├── directness.md   why copy reads evasive · when passive is correct · WYLTIWLT
-    ├── lexicon.md      controlled vocabulary · banned lists · proofing list
-    └── inclusive.md    readability · writing about people · alt text · non-visual
+├── SKILL.md              modes · gates · register · bands · the artifact
+├── references/           loaded on demand, not up front
+│   ├── states.md         the 12 states · error anatomy · component matrix · budgets
+│   ├── cold-read.md      when a subagent reads it · the six reactions · order of encounter
+│   ├── grammar.md        the ten grammar classes an audit checks
+│   ├── tells.md          second-order tells, flagged by density not instance
+│   ├── directness.md     why copy reads evasive · when passive is correct · WYLTIWLT
+│   ├── lexicon.md        controlled vocabulary · the system-to-human pass
+│   ├── journey.md        onboarding · prompt/work/follow-up · the drive under the sentence
+│   ├── frameworks.md     voice chart · scenario cards · the evidence-cited rules
+│   ├── inclusive.md      readability · WCAG wording criteria · alt text · non-visual
+│   ├── ai-features.md    strings around model output (two rules invert)
+│   ├── localization.md   shipping in more than one language (six rules invert)
+│   └── regulated.md      consent, cookies, checkout, cancellation
+└── scripts/
+    └── copy-lint.mjs     the deterministic floor: run it on UI code
 ```
 
 ## One worked example
@@ -84,15 +95,16 @@ What actually reads evasive is a family of mostly-*active* constructions: hidden
 
 ## Sources
 
-Built on three books, read end to end:
+Built on four books, read end to end:
 
 - Scott Kubie, *Writing for Designers* (A Book Apart, 2018)
 - Erika Hall, *Conversational Design* (A Book Apart, 2018)
 - Krystal Higgins, *Better Onboarding* (A Book Apart, 2021)
+- Yu-kai Chou, *Actionable Gamification* (2015), for its classification of motivation only, not its mechanics
 
-All three are short, excellent, and worth owning. This skill is a working synthesis, not a substitute.
+The first three are short, excellent, and worth owning. This skill is a working synthesis, not a substitute.
 
-Plus primary guidance from [Adobe Spectrum](https://spectrum.adobe.com/page/voice-and-tone/) (all nine UX writing pages), the [Federal Plain Language Guidelines](https://www.plainlanguage.gov/guidelines/), [Microsoft](https://learn.microsoft.com/en-us/style-guide/welcome/), [Apple HIG](https://developer.apple.com/design/human-interface-guidelines/writing), [IBM Carbon](https://carbondesignsystem.com/guidelines/content/writing-style/), [Atlassian](https://atlassian.design/foundations/content/language-and-grammar), [GOV.UK](https://www.gov.uk/guidance/content-design/writing-for-gov-uk), Shopify Polaris, the 18F Content Guide, and [NN/g](https://www.nngroup.com/articles/passive-voice-is-redeemed-for-web/). The four tonal modes and trust spectrum are Wise's. WYLTIWLT is Jonathan Richards', from *The Grammar of Interactivity* (UX Booth, 2013).
+Plus primary guidance from [Adobe Spectrum](https://spectrum.adobe.com/page/voice-and-tone/) (all nine UX writing pages), the [Federal Plain Language Guidelines](https://www.plainlanguage.gov/guidelines/), [Microsoft](https://learn.microsoft.com/en-us/style-guide/welcome/), [Apple HIG](https://developer.apple.com/design/human-interface-guidelines/writing), [IBM Carbon](https://carbondesignsystem.com/guidelines/content/writing-style/), [Atlassian](https://atlassian.design/foundations/content/language-and-grammar), [GOV.UK](https://www.gov.uk/guidance/content-design/writing-for-gov-uk), Shopify Polaris, the 18F Content Guide, and [NN/g](https://www.nngroup.com/articles/passive-voice-is-redeemed-for-web/). The four tonal modes and trust spectrum are Wise's. WYLTIWLT is Jonathan Richards', from *The Grammar of Interactivity* (UX Booth, 2013). The cold read's reader reactions come from the `cw-reader` skill in the Compound Writing plugin, which the skill uses if it is installed.
 
 Where a source is offline (UX Booth, 18F, the old plainlanguage.gov, Polaris's content pages), the reference files say so, so nobody cites a dead link.
 

@@ -27,7 +27,7 @@ You cannot write a prompt without knowing where it sits in a journey.
 
 ### 1. Define core use
 
-The end state of onboarding: not expertise, but the point at which someone is doing the activities that make them part of the core user base.
+The end state of onboarding. Not expertise, but the point at which someone is doing the activities that make them part of the core user base.
 
 Requirements for a good definition:
 - **Aligned to a real business goal**, not a vanity metric. `Has an account` is not core use.
@@ -55,7 +55,7 @@ Richer than entry points. An entry situation is the channel *plus* the motivatio
 
 From each routine, ask what action came immediately before it. Then before that. Keep going until you reach an entry situation. Repeat for different routine/entry combinations. Repeated actions across paths are the high-priority ones.
 
-Working backward is the whole trick: starting from the beginning produces the path you *assume* people take.
+Working backward is the whole trick. Starting from the beginning produces the path you *assume* people take.
 
 ### 5. Scope each action
 
@@ -73,9 +73,167 @@ Too broad and it is unclear what problem it solves. Too narrow and it does not s
 
 ---
 
+## The drive under the sentence
+
+Everything above decides **where** a string sits and **what** it has to say. This section
+decides **why the person would do it**, which is the half that used to be handled by
+instinct. The rest of this file says "align to the benefit they will notice immediately."
+That is a motivation instruction with no name for the thing it aligns to. Here is the name.
+
+**The default failure this section exists to ban: writing the prompt from what the
+business needs and calling the result a benefit.** "Complete your profile" is a chore
+with a verb on it. Nobody wants a complete profile. Name the drive first, then write.
+
+### Eight drives, as vocabulary only
+
+Chou's Octalysis, used here the way his own book argues for it: **as a classification, not
+as a licence to add mechanics.** His chapter 2 is titled *The PBL Fallacy* and spends
+itself arguing against points, badges and leaderboards. Where a project's voice doc bans
+completion mechanics, the book agrees with the voice doc.
+
+| | Drive | The sentence is offering… |
+|---|---|---|
+| 1 | **Epic Meaning & Calling** | you are part of something bigger, or you specifically were chosen |
+| 2 | **Development & Accomplishment** | you are getting better at something hard |
+| 3 | **Empowerment of Creativity & Feedback** | try a thing, see what happens, adjust |
+| 4 | **Ownership & Possession** | this is yours and you can make it more yours |
+| 5 | **Social Influence & Relatedness** | someone you care about is involved |
+| 6 | **Scarcity & Impatience** | you cannot have it yet |
+| 7 | **Unpredictability & Curiosity** | you do not know what happens next |
+| 8 | **Loss & Avoidance** | you will lose something you already have |
+
+**Two axes matter more than the list.**
+
+**White Hat (1–3) versus Black Hat (6–8).** The top drives make people feel capable and
+in control. The bottom drives create urgency and make them feel bad. Both work. Only one
+of them gets forgiven. Chou's own warning is that an all-White-Hat design has a named
+cost: *"there is a critical weakness of White Hat Motivation: it does not create a sense
+of urgency."* A product that bans every urgency mechanic and then wonders why nothing
+pulls has diagnosed itself and not noticed.
+
+**Left brain (result) versus right brain (process).** Drives 2, 4 and 6 are goal-focused;
+3, 5 and 7 are journey-focused. Only the right-brain ones sustain themselves. Chou calls
+a well-built CD3 loop an **Evergreen Mechanic**: one that generates its own content, so
+nobody has to keep writing new material to keep it interesting.
+
+### The test that makes this answerable
+
+Naming the drive converts a taste argument into a question with an answer. "Is this a
+guilt mechanic?" is unresolvable between two people with different instincts. "Which
+drive is this pulling on, and is it in its honest form?" is not.
+
+**The honest form of a drive is one where the fact is true without us.** A real deadline
+stated plainly is Core Drive 8 in its honest form. A deadline we invented is the same
+drive in its dishonest one. A birthday is genuinely on a date; a weekly nudge we chose is
+ours. That distinction is what lets a voice doc ban *last chance* and still permit
+*March 14 is in four weeks.*
+
+Apply it per drive, not per product. Most drives have both forms.
+
+### The same fact, worded two ways
+
+Chou's most transferable technique is **Rightful Heritage (#46)**, and his own note on it
+is the reason it belongs in a copy reference rather than a mechanics one:
+
+> The Rightful Heritage game technique can sometimes be implemented in **a simple word
+> change.**
+
+Same offer, two framings, two drives:
+
+> **Sign up now to receive 3000 free credits** (Core Drive 4). An offer. Easy to dismiss.
+>
+> **You now have 3000 credits. Sign up to save them** (Core Drive 8). Something you own
+> and are about to lose.
+
+The second converts far better, and **it is only honest if the credits were genuinely
+earned.** Manufacture the ownership and you have written a dark pattern with no mechanic
+in sight, which is exactly how they get shipped by teams that banned mechanics.
+
+### Do not pay for something they already enjoy
+
+The **Overjustification Effect**, and it is the one finding here with real research behind
+it (Deci 1971; Lepper, Greene & Nisbett 1973). Reward someone for an activity they
+already do for its own sake and the reward *replaces* the original motivation. Stop
+rewarding and they stop entirely, landing below where they started.
+
+Worse, it shifts attention from quality to completion: paid for drawings, people draw
+faster and worse.
+
+**For strings this means:** do not attach a reward to a behaviour that is already
+intrinsically motivated. Acknowledge it instead. "Nice one, that's 50 points" is a
+downgrade applied to a person who was enjoying themselves.
+
+And the reason this trap is everywhere, in Chou's words: *"it is much easier to add an
+extrinsic reward to a desired activity than to actually make the activity intrinsically
+fun."* The reward is rarely chosen. It is what you get when nobody chose.
+
+### Two onboarding techniques worth naming
+
+**Glowing Choice (#28).** People will not read the manual, so exactly one thing is lit at
+any moment and they are never in doubt about what to do next. This is the copy rule under
+every good first run: one prompt, one action, no menu of equals.
+
+**Beginner's Luck (#23).** Early success framed as *you specifically*, not as *everyone
+gets this*. The framing is free and the difference is entirely in the words.
+
+### The phase question
+
+Ask it once per string, and it changes the answer more than anything else here:
+
+> **Is this sentence meeting someone, or maintaining them?**
+
+Chou's four phases are Discovery, Onboarding, Scaffolding and Endgame, and his argument
+for them is the one that matters: *"the reason you are using a product on Day 1 is often
+very different from that of Day 100."* If no drive is present at a phase, people leave at
+that phase, which makes the phase map a **dropout-location diagnostic**, not a taxonomy.
+
+**The failure mode to grep for: a surface that says the same thing on day 1 and day 300.**
+That is a Scaffolding-phase problem hiding inside an Onboarding-phase feature. See
+"Beyond first run" below, which is the same idea in string form.
+
+### Acquire on the fear, retain on the promise
+
+The payoff of the phase question, and the reason it is worth asking per string rather
+than once per product. **One drive can arrive in two forms, and the forms belong at
+different phases.**
+
+A gifting and occasion-planning app's positioning, worked in full:
+
+| | Discovery / Onboarding | Scaffolding |
+|---|---|---|
+| The line | *Another gift card. The same one as last year.* | *Stop going to the same places.* |
+| The promise | you will not fail | you will have a bigger year |
+| The drive | Epic Meaning arriving **through** Loss & Avoidance | Epic Meaning proper |
+| Pays off | three to five times a year | every weekend |
+
+Both sentences are true and well made. The first converts better at the top of a funnel;
+almost every acquisition doc says so. **The second is the only one a retention surface
+can deliver on week after week**, because avoidance has nothing to say to someone who
+already did the thing.
+
+**So do not resolve this by picking one.** A product that leads with avoidance and never
+switches has a retention lane arguing against itself: it keeps promising relief from a
+failure the person already avoided. A product that leads with aspiration converts worse
+and often cannot say why.
+
+**The check, one line per surface:** *is this string still true for someone on their
+twentieth visit, and does it still offer them anything?* If it only works on a stranger,
+it belongs in Discovery and something else has to carry Scaffolding.
+
+Worth flagging when it comes up: this is positioning, not wording. Changing which form a
+product leads with touches the store listing, the paywall argument, the intro and every
+piece of acquisition copy at once. Name it as a decision rather than absorbing it into a
+copy pass.
+
+---
+
 ## Writing the three parts
 
 Each prioritized action needs strings for prompt, work, and follow-up.
+
+**Before writing any of the three: name the drive, and name its form.** One line, in the
+STRING SHEET. If the honest answer is "none, we need them to do it," that is a finding
+about the flow and not a brief for better wording.
 
 ### Prompt
 
@@ -130,7 +288,7 @@ Two cautions: do not put a prompt at every turn, and never let someone create wo
 
 **Both are right, for different products.** Adobe writes for professional creative tools where learning a technique *is* the value being delivered; somebody opening Photoshop to learn cropping wants the tutorial. Higgins writes for products where a person arrived to do one specific thing and the product is in the way.
 
-**The test:** is learning the product the reason they came, or an obstacle to it? For most consumer and service products it is an obstacle. Default to guided interaction. Reach for a tour only when the interface is genuinely novel and orientation is the goal, and cap it as Adobe does.
+**The test:** is learning the product the reason they came, or an obstacle to it? A chef-booking service, a gifting app, a meal planner, an invoicing tool: all obstacle. Default to guided interaction. Reach for a tour only when the interface is genuinely novel and orientation is the goal, and cap it as Adobe does.
 
 ## Language for anything that teaches
 
@@ -149,7 +307,7 @@ Define on first reference, *then* give the name. Never the reverse, and never th
 
 **One piece of jargon per sentence, maximum.** Two makes the sentence heavy no matter how short it is.
 
-Jargon relevant to the product's own field is fine and often wanted: someone new to a cooking product may well want to learn what a braise is. Invented jargon is not. Do not create new terms.
+Jargon relevant to the product's own field is fine and often wanted. Someone new to a cooking product may well want to learn what a braise is. Invented jargon is not. Do not create new terms.
 
 ### Do not refer to the interface
 
@@ -180,7 +338,7 @@ One encounter is not enough for a concept to stick. Retention drops off sharply 
 Reinforcement is not repetition. It is finding the contextual moments where a point needs restating, in the words that fit that moment.
 
 > A code of conduct agreed to once at signup is forgotten.
-> A summary pinned in the main feed, snippets beside the comment field, snippets beside the compose view, and a clear explanation when something is flagged. That gets adopted.
+> A summary pinned in the main feed, snippets beside the comment field, snippets beside the compose view, and a clear explanation when something is flagged: that gets adopted.
 
 **The test:** if you cannot find reasonable, contextually relevant places to remind someone of a thing, it is not as important as you think, and it does not belong at first run either.
 

@@ -61,7 +61,7 @@ There are 2 errors on this page.   →  Fix 2 fields to continue.
 There is a problem with your card. →  Your card was declined.
 ```
 
-*Microsoft "Top 10 tips", tip 10. One unlabeled Polaris example. Nobody else covers it. Microsoft is the only citation available.*
+*Microsoft "Top 10 tips", tip 10. One unlabeled Polaris example. Nobody else covers it, so Microsoft is the only citation available.*
 
 ### 3. Modal stacking and permission language
 
@@ -110,7 +110,7 @@ Shopping                       →  Shop
 - **For:** Material M2's "Begin with the objective" says the opposite: `To remove a photo from this album, drag it to the trash` is the Do.
 - **Neither:** Federal PL Guidelines give a length rule instead. Short condition that prevents a misreading goes first. Long condition with a short main clause goes last. Both long, use an if-then table.
 
-**House position:** verb first by default, condition first only when reading the action without the condition would mislead. Say which you did and why when it matters.
+**This skill's position:** verb first by default, condition first only when reading the action without the condition would mislead. Say which you did and why when it matters.
 
 Regardless of side: **`in order to` → `to`.** Banned outright by GOV.UK and 18F.
 
@@ -135,9 +135,9 @@ Everything else is contested.
 | **Require it in errors**, so people are not blamed | Atlassian |
 | Fine for the company, explaining itself | Carbon |
 
-Atlassian's Do (`We couldn't load your page`) is nearly Apple's Don't (`We're having trouble loading this content`). Both defensible. They cannot both be house style.
+Atlassian's Do (`We couldn't load your page`) is nearly Apple's Don't (`We're having trouble loading this content`). Both defensible. They cannot both be one product's style.
 
-**House position, following Polaris, which reconciles all three concerns:**
+**This skill's position, following Polaris, which reconciles all three concerns:**
 
 > **"We" appears only when the product is at fault.** Never for a routine action, never for a user error, never for a system state nobody caused.
 
@@ -167,8 +167,8 @@ From Jonathan Richards, *The Grammar of Interactivity* (UX Booth, 2013), cited b
 
 **A button label must make grammatical sense after both:**
 
-1. **"Would you like to…?"**: the system asking
-2. **"I would like to…"**: the person answering
+1. **"Would you like to…?"** (the system asking)
+2. **"I would like to…"** (the person answering)
 
 ```
 Learn more   →  "Would you like to learn more?" / "I would like to learn more."   ✓
@@ -191,27 +191,27 @@ It forces a verb into every label and rejects noun-only and pronoun-laden ones. 
 
 ---
 
-## Where the house rules and Adobe diverge
+## Where this skill's rules and Adobe diverge
 
 Deliberate, not oversights. Recorded so nobody re-raises them.
 
-| Adobe Spectrum says | House rule | Note |
+| Adobe Spectrum says | This skill's rule | Note |
 |---|---|---|
-| Use em dashes with spaces to separate related thoughts | **Zero em dashes** | House wins. Material M3 independently says avoid em dashes in UX writing |
-| Sentence case everywhere; all caps never for emphasis | Some products use all-caps monospace eyebrows | Defensible when scoped to state, counts, and column headers, which is labelling rather than emphasis. Flag the moment they drift into emphasis |
+| Use em dashes with spaces to separate related thoughts | **Zero em dashes** | This skill wins. Material M3 independently says avoid em dashes in UX writing |
+| Sentence case everywhere; all caps never for emphasis | One cooking app uses all-caps mono eyebrows | Defensible: that app scopes them to state, counts, and column headers, which is labelling, not emphasis. Flag if they drift into emphasis |
 | No emoji in any interface language | Non-verbal cues treated as part of the string | Adobe's reasons are real: localization and comprehension. Adopt for anything shipping in more than one language |
 | No exclamation marks: hard to localize, easy to overuse | Same | Agreement |
 | No semicolons: formal, measurably hurts comprehension | Adopt | New. Add to the proofing list |
-| No ampersands: spell out "and" | Adopt | New. More localizable, and `&` draws the eye to the least important word |
+| No ampersands. Spell out "and" | Adopt | New. More localizable, and `&` draws the eye to the least important word |
 | No slashes to join ideas, never `and/or` | Adopt | New. Reads noncommittal |
 
 ## Punctuation worth adopting wholesale
 
-Adobe's rules here are the most complete of any source and conflict with nothing in the house style.
+Adobe's rules here are the most complete of any source and conflict with nothing in this skill's style.
 
 - **Periods:** a full sentence gets one. A short phrase, standalone or in a toast or banner, does not. **Never in a header or on a button.**
 - **Lists:** no terminal punctuation, unless an item is a complete sentence. Then every item gets one. Capitalize each item, sentence case. Action lists all lead with a verb; noun lists all stay nouns.
-- **Colons:** fine to introduce a list or steps. **Never at the end of a form field label.** The component already shows the relationship.
+- **Colons:** fine to introduce a list or steps. **Never at the end of a form field label**. The component already shows the relationship.
 - **Ellipsis:** for truncation, and for in-progress states. Avoid on buttons unless the button leads somewhere requiring further action. Dropped when referring to the element in running text.
 - **Question marks:** the only punctuation acceptable in a title. Never rhetorical.
 - **Serial comma**, always. If a sentence needs many commas, split it.

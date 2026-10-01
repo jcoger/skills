@@ -1,5 +1,44 @@
 # Lexicon: controlled vocabulary
 
+## The system-to-human pass
+
+**Run this first, before any other lexicon work.** It is the highest-yield pass on any product built by the people who use it.
+
+Every product has an internal vocabulary: the words in the modules, the schema, the plan document. Those words are correct, precise, and load-bearing *inside the system*. They leak outward because the people writing strings are the people who named the modules, and to them the word has stopped feeling like jargon.
+
+**The pass:** list every noun and verb the codebase uses for a domain concept. For each one ask two questions.
+
+1. **Would someone who has never seen the code use this word for this thing?**
+2. **If not, what word would they use?**
+
+That second word is the string. The first stays in the code.
+
+```
+compose   →  plan, make, put together      (compose.js named it; a cook does not "compose" dinner)
+method    →  steps                          (also: it meant two different things in two screens)
+span      →  a dish that runs across days
+vehicle   →  the thing it goes on
+node      →  step
+resolve   →  find, work out
+persist   →  save
+```
+
+### The tells
+
+- The word is also a filename, a module, a class, or a type.
+- It appears in the plan document more often than in ordinary speech.
+- Two screens use it for two different things, and nobody noticed because the *code* is consistent.
+- Somebody on the team defines it in a sentence when asked. If it needs defining, it needs replacing, or teaching properly, once, with explain-then-name (`journey.md`).
+
+### The exception that keeps this honest
+
+**Domain vocabulary the audience already owns is not jargon.** A cooking product may say `Method` as a recipe heading because cookbooks have said it for a century. A finance product may say `statement`. The test is not "is it a specialist word" but **"is it specialist to us, or specialist to them?"** Words the audience brought with them stay. Words the codebase invented go.
+
+### Why this outranks the rest of the file
+
+The controlled vocabulary below fixes *inconsistency*: two words for one thing. This pass fixes *opacity*: one word nobody outside the building understands. Opacity is worse, and it is invisible from the inside, which is why it survives every review by the people who built the product.
+
+
 One concept, one word, everywhere. Little inconsistencies creep in constantly: here it is the "welcome" screen, there the "sign-in" screen. Here it is a "free trial," there a "test drive." This button says `Submit`, that one says `Send`. Each one is small. Together they make a product feel like it was built by strangers.
 
 A controlled vocabulary is a custom dictionary for the product. It is the cheapest consistency mechanism that exists, and it makes editing for consistency a find-and-replace job instead of a judgment call.
@@ -21,16 +60,16 @@ A controlled vocabulary is a custom dictionary for the product. It is the cheape
 
 ## The table
 
-Three statuses, not two. **"Use with caution" is the category that does the real work**: most contested words are not banned, they are correct in one context and wrong in another, and a binary table forces a false choice. *(Structure from Adobe Spectrum's in-product word list.)*
+Three statuses, not two. **"Use with caution" is the category that does the real work.** Most contested words are not banned, they are correct in one context and wrong in another, and a binary table forces a false choice. *(Structure from Adobe Spectrum's in-product word list.)*
 
 ```
 | Word | Status | Usage notes |
 |---|---|---|
-| Tutor | Preferred | The person teaching. Never instructor, provider, vendor, partner |
-| Book | Preferred | Verb, for reserving a tutor. "Book Priya" |
-| Plan | Use with caution | A saved set of lessons. Not the pricing plan. Say Plan only where a lesson set is meant |
+| Chef | Preferred | The person cooking. Never cook, provider, vendor, partner |
+| Book | Preferred | Verb, for reserving a chef. "Book Marcus" |
+| Menu | Use with caution | A saved set of dishes. Not the nav menu. Say Menu only where a dish set is meant |
 | Add | Use with caution | Bringing an existing thing into a view. Never for inviting a person |
-| Session | Open | Unsettled. See the open decisions table |
+| Service | Open | Unsettled. See the open decisions table |
 | Enable / disable | Avoid | Needlessly technical. Turn on / turn off |
 ```
 
@@ -45,8 +84,8 @@ Some terms are not settled, and pretending otherwise means every agent re-decide
 ```
 | # | The question | Candidates |
 |---|---|---|
-| 1 | What do we call the time with a tutor? | Session · Lesson · Booking · Class |
-| 2 | What do we call the people we serve? | Family · Member · Student · Customer |
+| 1 | What do we call the time with a chef in the home? | Service · Reservation · Booking · Visit |
+| 2 | What do we call the people we serve? | Household · Member · Guest · Customer |
 ```
 
 **Rules for the open list.**
@@ -82,10 +121,10 @@ Pick one side of each pair and never mix. If the product says `Sign in`, it neve
 
 ## Banned outright
 
-**House defaults for every user-facing string (a product's own voice doc overrides them):**
+**Voice rules for every user-facing string, no exceptions:**
 
 - **Em dashes.** Zero. Periods, commas, line breaks. Attribution lines (`— Sarah, Brookhaven`) and en-dash ranges are the only survivors.
-- curated · bespoke · seamless · elevate · AI-powered
+- curated · bespoke · seamless · elevate · AI-powered · fuel your body · experience the difference
 
 **UI-specific bans:**
 
@@ -125,8 +164,8 @@ curated|bespoke|seamless|elevate|AI-powered
 world-class|innovative|compelling
 Log in|Login         if the product says Sign in
 Sign up|Register     if the product says Create account
-!                    exclamation count: should be near zero
-...                  ellipsis in labels: usually means the label is unfinished
+!                    exclamation count, should be near zero
+...                  ellipsis in labels, usually means the label is unfinished
 ```
 
 Add project-specific entries: misspellings of product and feature names, terms the lexicon rejected, words you personally overuse.

@@ -21,7 +21,7 @@ Every interactive surface has these. A mockup shows one or two. The shipped prod
 
 # Character budgets
 
-House defaults at the narrowest supported width. Truncation is the real constraint. Verify in the running preview at 375px and in the simulator before treating any of these as settled.
+Defaults at the narrowest supported width. Truncation is the real constraint. Verify in the running preview at 375px and in the simulator before treating any of these as settled.
 
 | Slot | Budget | Note |
 |---|---|---|
@@ -50,7 +50,7 @@ House defaults at the narrowest supported width. Truncation is the real constrai
 
 # Action labels
 
-**The phrase defines the action. The style only supports it.** Even an icon-only control needs a decided verb: it becomes the accessibility label and the analytics event name.
+**The phrase defines the action. The style only supports it.** Even an icon-only control needs a decided verb. It becomes the accessibility label and the analytics event name.
 
 **Rules.**
 - Verb first, and the verb is the one the code performs. `Remove` from a list, `Delete` from the system, `Archive` if it is recoverable. These are three different words for three different operations.
@@ -164,7 +164,7 @@ Good    Your computer appears to be offline. Connect to the internet and try aga
 
 **Positive framing.** Say what they can do, not what they cannot or what they got wrong.
 
-**Specific errors, generic language.** Write a distinct message per case rather than one catch-all: a catch-all forces the reader to work out which half applies to them. But keep the *wording* generic: filenames, usernames, and folder names are visible elsewhere in the UI, and interpolating them multiplies the strings to localise.
+**Specific errors, generic language.** Write a distinct message per case rather than one catch-all. A catch-all forces the reader to work out which half applies to them. But keep the *wording* generic: filenames, usernames, and folder names are visible elsewhere in the UI, and interpolating them multiplies the strings to localise.
 
 ```
 Weak    Your document "Final-proposal-May-Monthly-Meeting.indd" could not be
@@ -238,7 +238,7 @@ Deny:   Not now
 ```
 
 - The benefit is the one that lands *now*, from the thing they just did.
-- `Not now` beats `Don't allow`: it does not spend the OS-level permission.
+- `Not now` beats `Don't allow`. It does not spend the OS-level permission.
 - Write the denied state too. What still works, and how to change it later.
 - Ask after a success, not before. Caviar asks about notifications after the first order, framing it around order status.
 
@@ -282,16 +282,16 @@ Not everyone wants the same amount of information, and the answer is not an aver
 
 | Layer | Who sees it | What it carries |
 |---|---|---|
-| **1. The casual line** | Everyone, always visible | The thing itself, in plain words. No jargon, no technique names |
-| **2. The scoop** | Expandable, for the curious | Why it is like that. The ingredient story, the health angle, the tradeoff |
-| **3. The process note** | For the people who want the mechanism | The technique, the number, the actual how. Translated, never lectured |
+| **1: The casual line** | Everyone, always visible | The thing itself, in plain words. No jargon, no technique names |
+| **2: The scoop** | Expandable, for the curious | Why it is like that. The ingredient story, the health angle, the tradeoff |
+| **3: The process note** | For the people who want the mechanism | The technique, the number, the actual how. Translated, never lectured |
 
 ```
 Layer 1   Slow-braised short rib with a smoked paprika finish.
 Layer 2   Built around bone broth and root vegetables. Comfort food that's
           actually doing something for you.
-Layer 3   The kitchen braises this low and slow for 4 hours, then hits it with
-          a paprika oil made from scratch.
+Layer 3   Chef Nia braises this low and slow for 4 hours, then hits it with a
+          paprika oil she makes from scratch.
 ```
 
 **Rules.**
