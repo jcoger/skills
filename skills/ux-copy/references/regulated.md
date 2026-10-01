@@ -57,13 +57,13 @@ German § 312k is stricter still: the button *"muss … mit **nichts anderem als
 
 ## What an enforcement order actually mandates
 
-The FTC's consent orders are the clearest published statement of what wording it accepts. **Amazon settled the Prime case for $2.5 billion in September 2025** (the largest civil penalty ever for an FTC rule violation), and the order dictates literal copy rules:
+The FTC's consent orders are the clearest published statement of what wording it accepts. **Amazon settled the Prime case for $2.5 billion on 25 September 2025**: a $1 billion civil penalty, *"the largest ever in a case involving an FTC rule violation,"* plus $1.5 billion in refunds. Section V of the order dictates literal copy rules:
 
-> A. Include a clear option or button to decline the Negative Option Feature (**e.g., cannot say "no thanks, I don't want free shipping"**);
-> B. Include language in the call to action that **references Prime membership (e.g., "Join Prime")**;
-> C. **Remove the double-stacked sign-up button**;
-> D. If it auto-renews, **indicate that by using the word "renews"**;
-> E. Always disclose the price and autorenewal on the sign-up page.
+> A. Include a clear option or button for customers to decline the Negative Option Feature (**e.g., cannot say "no thanks, I don't want free shipping"**);
+> B. Include language in the call to action for the Negative Option Feature that **references Prime membership (e.g., "Join Prime")**;
+> C. **Remove the double-stacked sign-up button** on all sign-up pages;
+> D. If the Negative Option Feature has an auto-renew feature, **indicate that feature by using the word "renews" (or a similar word)** on all sign-up pages; and
+> E. Always disclose the price and autorenewal feature on the sign up page for the Negative Option Feature.
 
 **Four transferable rules: name the product in the CTA, never phrase the decline as a loss, use the word `renews`, no stacked-button pattern.**
 
@@ -71,7 +71,7 @@ The charged strings are ordinary product copy. Decline: `No thanks, I do not wan
 
 **The pattern across every order: a button that does not do what it says.** `Continue to Cancel`, `End Membership` that opens a retention flow, `No, cancel` that exits the cancellation path. That is the core of a $2.5B case.
 
-*Also verified: Publishers Clearing House ($18.5M) mandates exact disclaimer strings and requires a "keep shopping" CTA to be **less prominent** than the entry CTA. Epic ($245M) turned on adjacent `PREVIEW STYLES`/`PURCHASE` buttons and on renaming `Undo` to `Cancel Purchase`, shrinking it, and requiring press-and-hold, internally observed as a ~35% drop in undo rate. Uber (filed April 2025, live) turns on enrollment CTAs (`Try for free`, `Start Saving`, `Claim offer`), where "consumers never click a button labeled 'Join Uber One.'"*
+*Also verified against the FTC's own orders and complaints: Publishers Clearing House ($18.5M, 2023 order) mandates exact disclaimer strings (`No Purchase Necessary. A Purchase Will Not Improve Your Chances of Winning.`) and requires a `continue shopping` CTA to be **less prominent** than the entry CTA. Epic ($245M, final March 2023) turned on preview and purchase buttons placed side by side, and on shrinking the `Undo` button and renaming it `Cancel Purchase`, after which the FTC says cancellations dropped markedly; refunds required a press-and-hold. Uber (filed April 2025, amended December 2025) turns on enrollment CTAs (`Try for free`, `Start Saving`, `Claim offer`) where "consumers never click a button labeled 'Join Uber One.'"*
 
 *Two corrections worth carrying: **there is no FTC action against LinkedIn**. The case usually meant is a private class action. And "save now, pay later" does not appear in the Epic complaint.*
 
@@ -243,4 +243,6 @@ New per se blacklist items apply in **one month**, added by Directive (EU) 2024/
 
 [CRD 2011/83/EU Art 8(2)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32011L0083) · CJEU *Fuhrmann-2* C-249/21 · [§ 312k BGB](https://www.gesetze-im-internet.de/bgb/__312k.html) · Cal. 11 CCR § 7004 + [CPPA Advisory 2024-02](https://cppa.ca.gov/) · Colorado 4 CCR 904-3 Rule 7.09 · [FTC Bringing Dark Patterns to Light](https://www.ftc.gov/reports/bringing-dark-patterns-light) · FTC .com Disclosures (2013) · [EDPB Guidelines 03/2022 v2.0](https://www.edpb.europa.eu/) · EDPB 05/2020 · GDPR Arts 7, 12 + Recital 32 · DSA Art 25 · DMA Arts 5(2), 13(6) · UCPD Annex I
 
-**Not verified:** specific FTC enforcement actions and settlement figures; EU Digital Fairness Act status; EDPB Guidelines 3/2025 (draft only); whether the Commission has issued DSA Art 25(3) guidelines.
+FTC: [Amazon press release](https://www.ftc.gov/news-events/news/press-releases/2025/09/ftc-secures-historic-25-billion-settlement-against-amazon) and [order](https://www.ftc.gov/system/files/ftc_gov/pdf/Amazon-ROSCA-Order-Filed_0.pdf) § V · [PCH order](https://www.ftc.gov/system/files/ftc_gov/pdf/1823145pchorder.pdf) · [Epic complaint](https://www.ftc.gov/system/files/ftc_gov/pdf/1923203EpicGamesComplaint.pdf) and [final order](https://www.ftc.gov/news-events/news/press-releases/2023/03/ftc-finalizes-order-requiring-fortnite-maker-epic-games-pay-245-million-tricking-users-making) · [Uber complaint](https://www.ftc.gov/news-events/news/press-releases/2025/04/ftc-takes-action-against-uber-deceptive-billing-cancellation-practices) and [amendment](https://www.ftc.gov/news-events/news/press-releases/2025/12/ftc-states-file-amended-complaint-against-uber-deceptive-billing-cancellation-practices). Amounts, order text and CTA rules verified 2026-10-01.
+
+**Not verified:** the counts quoted from the Amazon complaint (the four-page, six-click path; `Remind Me Later` four times); Uber's current case status; EU Digital Fairness Act status; EDPB Guidelines 3/2025 (draft only); whether the Commission has issued DSA Art 25(3) guidelines.
